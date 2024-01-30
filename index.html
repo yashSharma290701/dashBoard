@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/582bae9f0f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="index1.js"></script> -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">SimplePay</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" style="margin-left: 220px;" aria-current="page"
+                                href="#">DashBoard</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="navIcons" style="display: flex;">
+                        <i class="fa-solid fa-user"></i>
+                        <p>YASH</p>
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-3 grid1">
+                <div class="sidebar container">
+                    <a class="active" href="#home"><i class="fa-solid fa-chart-simple"
+                            style="margin-right: 1rem;"></i>DashBoard</a>
+                    <a href="#news"><i class="fa-solid fa-lightbulb" style="margin-right: 1rem;"></i>Planning</a>
+                    <a href="#contact"><i class="fa-solid fa-money-bill" style="margin-right: 1rem;"></i>Transaction</a>
+                    <a href="#about"><i class="fa-solid fa-gear" style="margin-right: 1rem;"></i> Setting</a>
+                    <hr style="color: aliceblue; margin-top: 120px;">
+                    <a href="#Help"> <i class="fa-solid fa-handshake-angle" style="margin-right: 1rem;"></i>Help</a>
+                    <a href="#Logout"> <i class="fa-solid fa-right-from-bracket"
+                            style="margin-right: 1rem;"></i>Log-Out</a>
+                    <button type="button" class="btn btn-outline-success btn1 mb-4"><i class="fa-solid fa-bug"
+                            style="margin-right: 1rem;"></i>Report</button>
+                </div>
+            </div>
+            <div class="col-sm-9 grid2">
+                <div class="container text-center">
+                    <div class="container-fluid bg-success mt-2 totalbalance">
+                        <p>Total Balance: $799,800,90.89</p>
+                    </div>
+                    <div class="row ">
+                        <div class="row">
+                        <div class="col col-lg-4 mb-2 ">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$100,900.75</h5><sub
+                                        style="color: rgb(9, 114, 9);">+5.59%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  col-lg-4 mb-2 ">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$563,870.85</h5><sub style="color: red;">-0.89%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  col-lg-4 mb-2">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$987,990.75</h5><sub
+                                        style="color: rgb(9, 114, 9);">+1.89%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col  col-lg-4 mb-2 ">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$290,470.75</h5><sub style="color: red;">-0.89%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 mb-2">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$290,470.75</h5><sub style="color: red;">-0.89%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 mb-2">
+                            <div class="card" style="width: 18rem; box-shadow: 10px 10px 5px lightblue;">
+                                <div class="card-body">
+                                    <h5 class="card-title">$687,890.93</h5><sub
+                                        style="color:rgb(9, 114, 9);">+2.68%</sub>
+                                    <p class="card-text">Balance <i class="fa-solid fa-money-check-dollar"
+                                            style="color: #1d8129; margin-left: 1rem;"></i></p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                <canvas id="myChart" style="width:100%;max-width:700px">
+                </canvas>
+
+            </div>
+        </div>
+</body>
+<script src="./index1.js"></script>
+
+</html>

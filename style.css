@@ -1,0 +1,67 @@
+
+.topNav{
+    margin-left: 2res;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    /* width: 15%; */
+    background-color: #191919;
+    /* position: absolute; */
+    height: 100%;
+    /* overflow: auto; */
+  }
+  .sidebar a {
+    display: block;
+    color: #fff;
+    padding: 2rem;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .btn1{
+    margin-left: 2rem;
+    margin-top: 5rem;
+  }
+  .card-group1 .card1{
+    position: relative;
+    margin: 1rem;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+  }
+  .card-group1{
+    box-sizing: content-box;
+  }
+  /* .grid2{
+    position: relative;
+  } */
+  .navIcons{
+    margin-top: 1rem;
+    margin-left: 3%;
+  }
+  .navIcons i{
+    padding-top: 3px;
+  }
+  .navIcons p{
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .totalbalance{
+    border-radius: 15px 50px
+  }
+  .totalbalance p{
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2rem;
+  }
